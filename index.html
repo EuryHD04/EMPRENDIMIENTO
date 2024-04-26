@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    /><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>GymPro</title>
+  </head>
+  <style>
+    .button2 {
+      background-color: #0f2a85;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    /* Estilos para el mensaje emergente */
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      z-index: 9999;
+    }
+    
+    #mensajeEmergente {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    
+    #mensajeEmergente h2 {
+      color: #032181de;
+    }
+    
+    .button-ok {
+      background-color: #032181de;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    </style>
+  <body>
+    <!--Header-->
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="navL">
+          <img src="img/favicon.png" alt="favicon" class="navL-img" />
+          
+        </a>
+
+        <div class="navM" id="nav-menu">
+          <ul class="navList">
+            <li class="navItem">
+              <a href="#home" class="navLink active-link"> Inicio </a>
+            </li>
+            <li class="navItem">
+              <a href="#about" class="navLink"> Especialidad </a>
+            </li>
+            <li class="navItem">
+              <a href="#product" class="navLink"> Batidas </a>
+            </li>
+            <li class="navItem">
+              <a href="#creatina" class="navLink"> Creatinas </a>
+            </li>
+            <li class="navItem">
+              <a href="#ropa" class="navLink"> Ropas </a>
+            </li>
+            <li class="navItem">
+              <a href="#pesas" class="navLink"> Pesas </a>
+            </li>
+            <li class="navItem">
+              <a href="#Proteinas" class="navLink"> Proteinas </a>
+            </li>
+            <li class="navItem">
+              <a href="#new" class="navLink"> Nuevos </a>
+            </li>
+            
+          </ul>
+
+          <div class="navclose" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <div class="navToggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--HOME-->
+      <section class="home container" id="home">
+        <div class="swiper home-swiper">
+          <div class="swiper-wrapper">
+            <section>
+              <div class="homecont grid">
+                <div class="homedata">
+                  <h1 class="hometitle">PRO <br />FITNESS <br />STORE!!</h1>
+                  <p class="homedes">
+                    Somos una tienda que te brindamos todo tipo de accesorio, suplementos, vestimimenta, entre otra cosas para
+                     tu entrenamiento en el gimnasio
+                  </p>
+                  
+                </div>
+
+                <div class="homegroup">
+                  <img src="img/proteina01-removebg-preview.png" alt="" class="homeimg" />
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!--CATEGORY-->
+      <section class="section category">
+        <h2 class="sectiontitle">
+          Las mejores <br />
+          Proteinas
+        </h2>
+
+        <div class="categorycontainer container grid">
+          <div class="categorydata">
+            <img src="img/proteina11__1_-removebg-preview.png" alt="" />
+            <h3 class="categorytitle"> whey Ration</h3>
+            <p class="categorydescription">
+
+            </p>
+          </div>
+
+          <div class="categorydata">
+            <img src="img/proteina11__2_-removebg-preview.png" alt="" />
+            <h3 class="categorytitle">Woc Vegan</h3>
+            <p class="categorydescription">
+
+            </p>
+          </div>
+
+          <div class="categorydata">
+            <img src="img/proteina12-removebg-preview.png" alt="" />
+            <h3 class="categorytitle">wheyner extend</h3>
+            <p class="categorydescription">
+
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--ABOUT-->
+      <section class="section about" id="about">
+        <div class="aboutcontainer container grid">
+          <img src="img/batida-inicio-removebg-preview.png" alt="" class="aboutimg" />
+          <div class="aboutdata">
+            <h2 class="sectiontitle abouttitle">Especialidad <br />En Batidos</h2>
+            <p class="aboutdescription">
+              Vendemos diferentes tipos de batidas de su preferencia y a su gusto con Proteninas etc..
+            </p>
+            
+          </div>
+        </div>
+      </section>
+
+      <!--PRODUCTS-->
+      <section class="section product" id="product">
+        <h2 class="sectiontitle">Batidas</h2>
+
+        <div class="productcontainer container grid">
+          <div class="productcontent">
+            <img src="img/fruta_bosque__1_-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Fruta del Bosque</h3>
+            <span class="productsubtitle">Batida</span>
+            <span class="productprice">$100</span>
+            <button  class="button productbutton buy-button" data-product="Fruta del Bosque">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+            
+          </div>
+          <div class="productcontent">
+            <img src="img/batida-fresa-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Fresa</h3>
+            <span class="productsubtitle">Batida</span>
+            <span class="productprice">$100</span>
+            <button  class="button productbutton buy-button" data-product="Batida de Fresa">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/batida-guineo-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Banana</h3>
+            <span class="productsubtitle">Batida</span>
+            <span class="productprice">$100</span>
+            <button  class="button productbutton buy-button" data-product="Batida de Banana">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/fruta_bosque__2_-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">frutas</h3>
+            <span class="productsubtitle">Batidas</span>
+            <span class="productprice">$100</span>
+            <button  class="button productbutton buy-button" data-product="Batida de Frutas">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/batida-kiwi-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Kiwi</h3>
+            <span class="productsubtitle">Batida</span>
+            <span class="productprice">$100</span>
+            <button  class="button productbutton buy-button" data-product="Batida de Kiwi">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/batido-guayaba-fondo-blanco-aislado_741910-13216-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Guallaba</h3>
+            <span class="productsubtitle">Batida</span>
+            <span class="productprice">$100</span>
+            <button class="button productbutton buy-button" data-product="Batida Guallaba">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+            
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--DESCUENTO-->
+      <section class="section discount">
+        <div class="discountcontainer container grid">
+          <div class="discountdata">
+            <h2 class="discounttitle">80% Descuento <br />Productos</h2>
+            <a href="#product" class="button">Vamos</a>
+          </div>
+          <img src="img/batida-guineo-removebg-preview.png" alt="" class="discountimg" />
+        </div>
+      </section>
+
+      <section class="section product" id="creatina">
+        <h2 class="sectiontitle">Creatinas</h2>
+
+        <div class="productcontainer container grid">
+          <div class="productcontent">
+            <img src="img/creatine1.png" alt="" class="productimg" />
+            <h3 class="producttitle"> Magna Power </h3>
+            <span class="productsubtitle"> Donde el magnesio
+               puro se une a la creatina</span>
+            <span class="productprice">$2,000</span>
+            <button  class="button productbutton buy-button" data-product="Magna Power">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/CREATINA2-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">MuscleTech Platinum </h3>
+            <span class="productsubtitle"> Polvo de monohidrato de creatina </span>
+            <span class="productprice">$1,500</span>
+            <button  class="button productbutton buy-button" data-product="MuscleTech Platinum">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/creatine3.jpg" alt="" class="productimg" />
+            <h3 class="producttitle">Weider Premium</h3>
+            <span class="productsubtitle"> Sabor Neutro, 100% Monohidrato de Creatina Creapure </span>
+            <span class="productprice">$2,500</span>
+            <button  class="button productbutton buy-button" data-product="Weider Premium">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/creatine2.png" alt="" class="productimg" />
+            <h3 class="producttitle">USN Pure</h3>
+            <span class="productsubtitle">USN Supplements Monohidrato de creatina pura </span>
+            <span class="productprice">$1,900</span>
+            <button  class="button productbutton buy-button" data-product="USN Pure">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/CREATINA3-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">PRE JYM</h3>
+            <span class="productsubtitle">sabor cereza negra para tomar previamente</span>
+            <span class="productprice">$900</span>
+            <button  class="button productbutton buy-button" data-product="PRE JYM">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/creatine3.png" alt="" class="productimg" />
+            <h3 class="producttitle">Performance</h3>
+            <span class="productsubtitle"> Apoya el crecimiento muscular + el rendimiento</span>
+            <span class="productprice">$3,000</span>
+            <button  class="button productbutton buy-button" data-product="Performance">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section product" id="ropa">
+        <h2 class="sectiontitle">Ropas</h2>
+
+        <div class="productcontainer container grid">
+          <div class="productcontent">
+            <img src="img/ROPA9-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle"> Active Performance </h3>
+            <span class="productsubtitle"> Camiseta Active Performance Tech para hombre </span>
+            <span class="productprice">700</span>
+            <button  class="button productbutton buy-button" data-product="Active Performance">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/ROPA2-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">THE NORTH FACE</h3>
+            <span class="productsubtitle">Tejido elástico para mayor movilidad </span>
+            <span class="productprice">$500</span>
+            <button  class="button productbutton buy-button" data-product="THE NORTH FACE">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/ROPA8-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Camiseta Legend</h3>
+            <span class="productsubtitle">La tecnología Dri-FIT ayuda a mantenerte seco </span>
+            <span class="productprice">$1000</span>
+            <button  class="button productbutton buy-button" data-product="Camiseta Legend">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/ROPA6-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Bra Sports</h3>
+            <span class="productsubtitle">Soporte medio Tecnología Dri-FIT Copas removibles </span>
+           <span class="productprice">$700</span>
+           <button  class="button productbutton buy-button" data-product="Bra Sports">
+            <i class="bx bx-cart-alt producticon"></i>
+          </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/ROPA13-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Leggings</h3>
+            <span class="productsubtitle"> leggings cortos (color marrón café, Suave y cómodo)</span>
+             <span class="productprice">$700</span>
+             <button  class="button productbutton buy-button" data-product="Leggings">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/ROPA12-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle"> camisetas cortas</h3>
+            <span class="productsubtitle">Paquete de 3 camisetas cortas acanaladas sin costuras</span>
+            <span class="productprice">$1000</span>
+            <button  class="button productbutton buy-button" data-product="camisetas cortas">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/ROPA10-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Under Armour Woven</h3>
+            <span class="productsubtitle">Tejido suave y antidesgarro ligero </span>
+            <span class="productprice">$800</span>
+            <button  class="button productbutton buy-button" data-product="Under Armour Woven">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/ROPA5-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle"> Armour Leggings</h3>
+            <span class="productsubtitle">La tela de rejilla térmica atrapa el calor </span>
+            <span class="productprice">$900</span>
+            <button  class="button productbutton buy-button" data-product="Armour Leggings">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/ROPA4-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Just My Size</h3>
+            <span class="productsubtitle">Cintura ancha y cómoda sin cordón</span>
+            <span class="productprice">$600</span>
+            <button  class="button productbutton buy-button" data-product="Just My Size">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product" id="pesas">
+        <h2 class="sectiontitle">Equipos de entrenamiento</h2>
+
+        <div class="productcontainer container grid">
+          <div class="productcontent">
+            <img src="img/pesa5-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle"> Mancuernas hexagonales</h3>
+            <span class="productsubtitle">juego de 2 unidades cada una de 25 libras </span>
+            <span class="productprice">$2000</span>
+            <button  class="button productbutton buy-button" data-product="Mancuernas hexagonales">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/pesa6-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Mancuerna</h3>
+            <span class="productsubtitle">Mancuerna, equipo de fitness (tamaño : 33.1 lbs)</span>
+            <span class="productprice">$1000</span>
+            <button  class="button productbutton buy-button" data-product="Mancuerna">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/pesa4-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Set Mancuernas</h3>
+            <span class="productsubtitle">LUXTRI Set de Mancuernas 20 kg, 2 Mancuernas </span>
+            <span class="productprice">$1500</span>
+            <button  class="button productbutton buy-button" data-product="Set Mancuernas">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/pesa2-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Pesa Rusa </h3>
+            <span class="productsubtitle">Ideal para fortalecer los musculos, 20 Libras</span>
+            <span class="productprice">$2500</span>
+            <button  class="button productbutton buy-button" data-product="Pesa Rusa">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/pesa3-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Estante</h3>
+            <span class="productsubtitle">Estante de almacenamiento para mancuernas</span>
+            <span class="productprice">$4000</span>
+            <button  class="button productbutton buy-button" data-product="Estante">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/pesa1-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle"> mancuernas ajustables</h3>
+            <span class="productsubtitle">Juego de mancuernas ajustables de 25/55 libras</span>
+            <span class="productprice">$1500</span>
+            <button  class="button productbutton buy-button" data-product="mancuernas ajustables">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product" id="Proteinas">
+        <h2 class="sectiontitle">Proteinas</h2>
+
+        <div class="productcontainer container grid">
+          <div class="productcontent">
+            <img src="img/PROTEINA11.png" alt="" class="productimg" />
+            <h3 class="producttitle">100% Whey Protein</h3>
+            <span class="productsubtitle">con aminoácidos adicionales con enzimas digestivascon </span>
+            <span class="productprice">$3,000</span>
+            <button  class="button productbutton buy-button" data-product="100% Whey Protein">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/PROTEINA10.png" alt="" class="productimg" />
+            <h3 class="producttitle">BSN SYNTHA-6 </h3>
+            <span class="productsubtitle">Ofrecemos una experiencia inmejorable similar a un batido</span>
+            <span class="productprice">$2,500</span>
+            <button  class="button productbutton buy-button" data-product="BSN SYNTHA-6">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/PROTEINA12.png" alt="" class="productimg" />
+            <h3 class="producttitle">Hydro Whey </h3>
+            <span class="productsubtitle">Fabricado con aislados avanzados de proteína de suero </span>
+            <span class="productprice">$3,000</span>
+            <button  class="button productbutton buy-button" data-product="Hydro Whey">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/PROTEINA13.png" alt="" class="productimg" />
+            <h3 class="producttitle"> Whey Protein</h3>
+            <span class="productsubtitle">proteína de suero de leche de Gold Standard</span>
+            <span class="productprice">$2,000</span>
+            <button  class="button productbutton buy-button" data-product="Whey Protein">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/PROTEINA15.png" alt="" class="productimg" />
+            <h3 class="producttitle">Ena Whey Protein </h3>
+            <span class="productsubtitle">proteína de suero que existe. Al sumarla a nuestra fórmula </span>
+            <span class="productprice">$4.000</span>
+            <button  class="button productbutton buy-button" data-product="Ena Whey Protein">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/PROTEINA16.png" alt="" class="productimg" />
+            <h3 class="producttitle">Vegetal Chocolate</h3>
+            <span class="productsubtitle">Proteína Vegetal en polvo. Es un Suplemento Alimentario </span>
+         <span class="productprice">$1,500</span>
+         <button  class="button productbutton buy-button" data-product="Vegetal Chocolate">
+          <i class="bx bx-cart-alt producticon"></i>
+        </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product" id="">
+        <h2 class="sectiontitle">BCAA</h2>
+
+        <div class="productcontainer container grid">
+          <div class="productcontent">
+            <img src="img/BCAA1-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Optimum Nutrition</h3>
+            <span class="productsubtitle">ayuda a apoyar el rendimiento</span>
+            <span class="productprice">$1,500</span>
+            <button  class="button productbutton buy-button" data-product="Optimum Nutrition">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/BCAA2-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Cápsulas BCAA</h3>
+            <span class="productsubtitle">Utilizado antes del entrenamiento</span>
+            <span class="productprice">$1000</span>
+            <button  class="button productbutton buy-button" data-product="Cápsulas BCAA">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/BCAA3-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">BCAA Powder 6000 </h3>
+            <span class="productsubtitle">para ayudar a promover la recuperación </span>
+            <span class="productprice">$2,000</span>
+            <button  class="button productbutton buy-button" data-product="BCAA Powder 6000">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/BCAA4-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">BCAA TRAINER-API</h3>
+            <span class="productsubtitle">Es una mezcla que Contiene 5000 mg de aminoácidos </span>
+            <span class="productprice">$2,300</span>
+            <button  class="button productbutton buy-button" data-product="BCAA TRAINER-API">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/BCAA5-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Forzagen BCAAS </h3>
+            <span class="productsubtitle"> alta calidad nuestro polvo de aminoácidos BCAA</span>
+            <span class="productprice">$1,000</span>
+            <button  class="button productbutton buy-button" data-product="Forzagen BCAAS">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+          <div class="productcontent">
+            <img src="img/BCAA6-removebg-preview.png" alt="" class="productimg" />
+            <h3 class="producttitle">Nutrition Cápsulas BCAA</h3>
+            <span class="productsubtitle">Utilizado antes del entrenamiento de resistencia,</span>
+            <span class="productprice">$1,200</span>
+            <button  class="button productbutton buy-button" data-product="Nutrition Cápsulas BCAA">
+              <i class="bx bx-cart-alt producticon"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--LO NUEVO-->
+      <section class="section new" id="new">
+        <h2 class="sectiontitle">Nuevos</h2>
+
+        <div class="newcontainer container">
+          <div class="swiper new-swiper">
+            <div class="swiper-wrapper">
+              <div class="newcontent swiper-slide">
+                <div class="newtag">Nuvo</div>
+                <img src="img/cinturon.png" alt="" class="newimg" />
+                <h3 class="newtitle">Cinturón</h3>
+                <span class="newsubtitle">La palanca de acero inoxidable altamente duradera </span>
+                <div class="newprices">
+                  <span class="newprice">$1200</span>
+                  <span class="newdiscount">$1500</span>
+                  <button  class="button productbutton buy-button" data-product="Cinturón">
+                    <i class="bx bx-cart-alt producticon"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="newcontent swiper-slide">
+                <div class="newtag">Nuvo</div>
+                <img src="img/Straps.png" alt="" class="newimg" />
+                <h3 class="newtitle">Straps</h3>
+                <span class="newsubtitle">Diseño de fácil uso para soportar ejercicios de levantamiento</span>
+                <div class="newprices">
+                  <span class="newprice">$800</span>
+                  <span class="newdiscount">$1000</span>
+                  <button  class="button productbutton buy-button" data-product="Straps">
+                    <i class="bx bx-cart-alt producticon"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="newcontent swiper-slide">
+                <div class="newtag">Nuvo</div>
+                <img src="img/rodilleras.png" alt="" class="newimg" />
+                <h3 class="newtitle">Rodilleras</h3>
+                <span class="newsubtitle">DISEÑADO PARA USO DIARIO Y ACTIVIDADES AL AIRE LIBRE</span>
+                <div class="newprices">
+                  <span class="newprice">$300</span>
+                  <span class="newdiscount">$400</span>
+                  <button  class="button productbutton buy-button" data-product="Rodilleras">
+                    <i class="bx bx-cart-alt producticon"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!--CORREO-->
+
+      <section class="section newsletter">
+        <div class="newslc container">
+          <h2 class="sectiontitle">Suscripción</h2>
+          <p class="newsld">Suscríbete para próximos productos</p>
+          <form action="" class="newslf">
+            <input type="text" placeholder="Correo" class="newslin" />
+            <button type="button" class="button2" onclick="mostrarMensaje()">Suscríbete</button>
+      
+            <div id="overlay">
+              <div id="mensajeEmergente">
+                <h2>¡Te has suscrito correctamente!</h2>
+                <button class="button-ok" onclick="ocultarMensaje()">OK</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer section">
+      <div class="footercontainer container grid">
+        <div class="footercontent">
+          <a href="#" class="footerL">
+            <img src="img/favicon.png" alt="" class="footerL-img" />
+            Pro Finess Store
+          </a>
+
+          <p class="footerdescription">
+            Somos una tienda que te brindamos todo tipo de accesorio,
+            suplementos, vestimimenta, entre otra cosas para
+            tu entrenamiento en el gimnasio
+          </p>
+
+          <div class="footersocial">
+            <a href="https://www.instagram.com/pro_fitness_store_03/?igsh=MW9pcGEyczN5cXkxcg%3D%3D" target="_blank" class="footersocial-link">
+              <i class="bx bxl-instagram-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footercontent">
+          <h3 class="footertitle">Diseño y Desarrollo por</h3>
+          <ul class="footerlinks">
+            <li>
+              <a href="#" class="footerlink">Luis Jose Rodrigez</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Joarlin Jose Vargas</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Eury Calderon</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footercontent">
+          <h3 class="footertitle">Trabajadores de la Tienda</h3>
+          <ul class="footerlinks">
+            <li>
+              <a href="#" class="footerlink">Luis Daniel Cabral</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Yordy David Arno</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Noel Antonio Garcias</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Luis Jose Rodrigez</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Joarlin Jose Vargas</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Eury Calderon</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footercontent">
+          <h3 class="footertitle">Productos</h3>
+          <ul class="footerlinks">
+            <li>
+              <a href="#" class="footerlink">Batidas</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Creatinas</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Proteinas</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Pesas</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Ropa</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">BCAA</a>
+            </li>
+            <li>
+              <a href="#" class="footerlink">Accesorios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <span class="footercopy">Pro Finess Store</span>
+    </footer>
+
+    <!--FOOTER-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollupicon"></i>
+    </a>
+
+    <!--JAVASCRIPT-->
+    <script>
+      // Espera a que el DOM esté cargado
+      document.addEventListener("DOMContentLoaded", function() {
+        // Selecciona todos los botones de compra
+        const buyButtons = document.querySelectorAll(".buy-button");
+    
+        // Agrega un controlador de eventos para cada botón de compra
+        buyButtons.forEach(button => {
+          button.addEventListener("click", function() {
+            // Obtiene el nombre del producto del atributo de datos
+            const product = button.getAttribute("data-product");
+    
+            // Muestra la ventana emergente de SweetAlert2
+            Swal.fire({
+              title: "Compra exitosa",
+              text: `Has comprado ${product} correctamente`,
+              icon: "success",
+              confirmButtonText: "OK"
+            });
+          });
+        });
+      });
+    </script>
+    
+    <script>
+      function mostrarMensaje() {
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "block";
+      }
+      
+      function ocultarMensaje() {
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "none";
+      }
+      </script>
+
+<script>
+  function mostrarMensaje() {
+    document.getElementById("overlay").style.display = "block";
+  }
+
+  function ocultarMensaje() {
+    document.getElementById("overlay").style.display = "none";
+  }
+</script>
+    
+    <script src="js/scrollreveal.min.js"></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
